@@ -1,0 +1,38 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Error Boundary Styles */
+  .error-boundary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the error message stays centered, even with overflow */
+    text-align: center;
+    background-color: #fff;
+    color: #dc3545; /* Red for error messages */
+  }
+  
+  .error-boundary h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 20px;
+    border: 2px solid #dc3545;
+    border-radius: 8px;
+    background-color: #fff5f5; /* Light red background */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .error-boundary h1 {
+      font-size: 20px;
+      padding: 15px;
+    }
+  }
+  
